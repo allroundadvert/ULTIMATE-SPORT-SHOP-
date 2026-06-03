@@ -49,13 +49,12 @@ header p{
     font-weight:bold;
 }
 
-/* ✅ FIRST TWO IMAGE SLIDER */
+/* SLIDER (FIRST 2 IMAGES) */
 .top-slider{
     width:100%;
     height:220px;
     overflow:hidden;
     display:flex;
-    position:relative;
 }
 
 .top-slider img{
@@ -73,7 +72,7 @@ header p{
     100%{transform:translateX(0%);}
 }
 
-/* FULL GALLERY */
+/* FULL IMAGE GRID */
 .top-gallery{
     width:100%;
     display:grid;
@@ -194,31 +193,35 @@ footer{
     padding:20px;
     color:#999;
 }
+
+/* COLOR LABEL */
+.color-label{
+    font-size:12px;
+    color:var(--gold);
+    margin-left:6px;
+}
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
 <div class="hero-image">
-    <img src="https://raw.githubusercontent.com/allroundadvert/ULTIMATE-SPORT-SHOP-/b8a17429685d41fe3658c5cb459f8ff63181db7a/1780474358627.png">
+<img src="https://raw.githubusercontent.com/allroundadvert/ULTIMATE-SPORT-SHOP-/b8a17429685d41fe3658c5cb459f8ff63181db7a/1780474358627.png">
 </div>
 
 <header>
-    <h1>ULTIMATE SPORTS SHOP</h1>
-    <p>Dealers in High Quality Sport Wears and Equipment.</p>
-    <p><strong>Address:</strong> 18 Stadium Road, Benin City, Edo State.</p>
+<h1>ULTIMATE SPORTS SHOP</h1>
+<p>Dealers in High Quality Sport Wears and Equipment.</p>
+<p><strong>Address:</strong> 18 Stadium Road, Benin City, Edo State.</p>
 </header>
 
-<!-- ✅ FIRST 2 IMAGES SLIDER -->
+<!-- SLIDER -->
 <div class="top-slider">
-
 <img src="https://raw.githubusercontent.com/allroundadvert/ULTIMATE-SPORT-SHOP-/b292bae1ba8cacc59bae31f59fa00ad57132b464/IMG-20260603-WA0006.jpg">
 <img src="https://raw.githubusercontent.com/allroundadvert/ULTIMATE-SPORT-SHOP-/b292bae1ba8cacc59bae31f59fa00ad57132b464/IMG-20260603-WA0007.jpg">
-
 </div>
 
-<!-- FULL IMAGE GRID -->
+<!-- FULL IMAGE RESTORED GRID -->
 <div class="top-gallery">
 
 <img src="https://raw.githubusercontent.com/allroundadvert/ULTIMATE-SPORT-SHOP-/b292bae1ba8cacc59bae31f59fa00ad57132b464/IMG-20260603-WA0008.jpg">
@@ -259,7 +262,7 @@ footer{
 
 </div>
 
-<!-- ORDER FORM -->
+<!-- ORDER -->
 <div class="container">
 
 <h2>Order Form</h2>
@@ -271,7 +274,8 @@ footer{
 <td>
 <input type="checkbox" class="item">
 <input type="number" class="qty" placeholder="Qty">
-<input type="color" class="color"> <span>Color</span>
+<input type="color" class="color">
+<span class="color-label">Color</span>
 </td>
 </tr>
 
@@ -280,7 +284,8 @@ footer{
 <td>
 <input type="checkbox" class="item">
 <input type="number" class="qty" placeholder="Qty">
-<input type="color" class="color"> <span>Color</span>
+<input type="color" class="color">
+<span class="color-label">Color</span>
 </td>
 </tr>
 
@@ -289,7 +294,8 @@ footer{
 <td>
 <input type="checkbox" class="item">
 <input type="number" class="qty" placeholder="Qty">
-<input type="color" class="color"> <span>Color</span>
+<input type="color" class="color">
+<span class="color-label">Color</span>
 </td>
 </tr>
 
@@ -298,7 +304,8 @@ footer{
 <td>
 <input type="checkbox" class="item">
 <input type="number" class="qty" placeholder="Qty">
-<input type="color" class="color"> <span>Color</span>
+<input type="color" class="color">
+<span class="color-label">Color</span>
 </td>
 </tr>
 
@@ -307,7 +314,8 @@ footer{
 <td>
 <input type="checkbox" class="item">
 <input type="number" class="qty" placeholder="Qty">
-<input type="color" class="color"> <span>Color</span>
+<input type="color" class="color">
+<span class="color-label">Color</span>
 </td>
 </tr>
 
@@ -316,7 +324,8 @@ footer{
 <td>
 <input type="checkbox" class="item">
 <input type="number" class="qty" placeholder="Qty">
-<input type="color" class="color"> <span>Color</span>
+<input type="color" class="color">
+<span class="color-label">Color</span>
 </td>
 </tr>
 
@@ -325,7 +334,8 @@ footer{
 <td>
 <input type="checkbox" class="item">
 <input type="number" class="qty" placeholder="Qty">
-<input type="color" class="color"> <span>Color</span>
+<input type="color" class="color">
+<span class="color-label">Color</span>
 </td>
 </tr>
 
@@ -334,28 +344,25 @@ footer{
 <td>
 <input type="checkbox" class="item">
 <input type="number" class="qty" placeholder="Qty">
-<input type="color" class="color"> <span>Color</span>
-</td>
-</tr>
-
-<tr>
-<th>Sport / Fitness Consultancy</th>
-<td>
-<input type="checkbox" class="item">
-<input type="number" class="qty" placeholder="Qty">
-<input type="color" class="color"> <span>Color</span>
+<input type="color" class="color">
+<span class="color-label">Color</span>
 </td>
 </tr>
 
 </table>
 
 <div class="buttons">
+
 <button class="whatsapp-btn" onclick="sendOrder()">SEND ORDER ON WHATSAPP</button>
-</div>
+
+<a class="facebook-btn" href="https://www.facebook.com/profile.php?id=100086254317888" target="_blank">Facebook</a>
+
+<a class="tiktok-btn" href="https://www.tiktok.com/@ikex101" target="_blank">TikTok</a>
 
 </div>
 
-<!-- MAP -->
+</div>
+
 <div class="map">
 <iframe src="https://www.google.com/maps?q=18+Stadium+Road+Benin+City+Edo+State&output=embed"></iframe>
 </div>
